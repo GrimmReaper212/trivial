@@ -21,7 +21,7 @@ a los queridos jugadores.
 Creamos test unitario "problema2"
 
 ## Problema 4
-Invertimos la lógica de noGanador = false con un ! en los métodos
+Invertimos la lógica de noGanador = false con un ! en los métodos.
 
 ## Problema 5
 Simplificamos el código intangible a algo más simple extrayendo
@@ -30,4 +30,8 @@ código duplicado a un nuevo método llamado "pasarSiguienteJugador"
 ## Problema 6
 Simplificamos código nuevamente, parece que se entiende algo mejor,
 lo hemos extraído al método "loHaDichoBien"
+
+## Problema 7
+Añadimos un do while en el método de las preguntas para que, en caso
+de que se acaben, siga preguntando hasta que gane alguien.
 

@@ -27,3 +27,7 @@ Invertimos la lógica de noGanador = false con un ! en los métodos
 Simplificamos el código intangible a algo más simple extrayendo
 código duplicado a un nuevo método llamado "pasarSiguienteJugador"
 
+## Problema 6
+Simplificamos código nuevamente, parece que se entiende algo mejor,
+lo hemos extraído al método "loHaDichoBien"
+

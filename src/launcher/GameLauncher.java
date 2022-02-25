@@ -38,6 +38,7 @@ public class GameLauncher {
         } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Lo sentimos, no puede iniciar la partida si sois más de 6 jugadores");
         }
+        System.out.println("Juego terminado...");
 
     }
 }

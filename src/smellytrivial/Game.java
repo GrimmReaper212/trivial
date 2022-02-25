@@ -18,12 +18,14 @@ public class Game {
     boolean estaSaliendoDeLaCarcel;
 
     public  Game(){
-        for (int i = 0; i < 50; i++) {
-            preguntasCultura.addLast("Pregunta de Cultura " + i);
-            preguntasCiencias.addLast(("Pregunta de Ciencias " + i));
-            preguntasDeportes.addLast(("Pregunta de Deportes " + i));
-            preguntasMusica.addLast(crearPreguntaMusica(i));
-        }
+        do {
+            for (int i = 0; i < 50; i++) {
+                preguntasCultura.addLast("Pregunta de Cultura " + i);
+                preguntasCiencias.addLast(("Pregunta de Ciencias " + i));
+                preguntasDeportes.addLast(("Pregunta de Deportes " + i));
+                preguntasMusica.addLast(crearPreguntaMusica(i));
+            }
+        } while (!jugadorHaGanado());
     }
 
     public String crearPreguntaMusica(int index){

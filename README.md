@@ -20,6 +20,11 @@ a los queridos jugadores.
 
 Creamos test unitario "problema2"
 
+## Problema 3
+Cambiamos el valor del booleano está en la carcel para que en caso de
+sacar un número impar salga de ella (no sólo que nos diga que ha salido,
+si no que salga de verdad).
+
 ## Problema 4
 Invertimos la lógica de noGanador = false con un ! en los métodos.
 

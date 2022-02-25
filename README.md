@@ -23,4 +23,7 @@ Creamos test unitario "problema2"
 ## Problema 4
 Invertimos la lógica de noGanador = false con un ! en los métodos
 
+## Problema 5
+Simplificamos el código intangible a algo más simple extrayendo
+código duplicado a un nuevo método llamado "pasarSiguienteJugador"
 

@@ -19,3 +19,7 @@ no continúe la partida y aparezca un mensaje explicando la situación
 a los queridos jugadores.
 
 Creamos test unitario "problema2"
+
+## Problema 4
+Invertimos la lógica de noGanador = false con un ! en los métodos
+

@@ -19,7 +19,6 @@ public class GameLauncher {
         Random rand = new Random();
 
         do {
-
             juego.tirarDado(rand.nextInt(5) + 1);
 
             if (rand.nextInt(9) == 7) {
@@ -27,9 +26,6 @@ public class GameLauncher {
             } else {
                 noGanador = juego.fueRespuestaCorrecta();
             }
-
-
-
         } while (noGanador);
 
     }

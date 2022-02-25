@@ -16,17 +16,21 @@ public class GameLauncher {
         juego.agregar("Juan");
         juego.agregar("Antonio");
 
-        Random rand = new Random();
+        if (juego.esJugable()) {
+            Random rand = new Random();
 
-        do {
-            juego.tirarDado(rand.nextInt(5) + 1);
+            do {
+                juego.tirarDado(rand.nextInt(5) + 1);
 
-            if (rand.nextInt(9) == 7) {
-                noGanador = juego.respuestaIncorrecta();
-            } else {
-                noGanador = juego.fueRespuestaCorrecta();
-            }
-        } while (noGanador);
+                if (rand.nextInt(9) == 7) {
+                    noGanador = juego.respuestaIncorrecta();
+                } else {
+                    noGanador = juego.fueRespuestaCorrecta();
+                }
+            } while (noGanador);
+        } else {
+            System.out.println("Necesitas al menos 2 jugadores para comenzar la partida...");
+        }
 
     }
 }

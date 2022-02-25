@@ -65,25 +65,24 @@ public class Game {
                 estaSaliendoDeLaCarcel = true;
 
                 System.out.println(jugadores.get(jugadorActual) + " sale de la casilla de castigo");
-                posiciones[jugadorActual] = posiciones[jugadorActual] + puntosDado;
-                if (posiciones[jugadorActual] > 11) posiciones[jugadorActual] = posiciones[jugadorActual] - 12;
-                System.out.println(nuevaPosicionJugador());
-                System.out.println("La categoría es " + categoriaActual());
-                hacerPregunta();
+                pasarSiguienteJugador(puntosDado);
             } else {
                 System.out.println(jugadores.get(jugadorActual) + " no sale de la casilla de castigo");
                 estaSaliendoDeLaCarcel = false;
             }
 
         } else {
-
-            posiciones[jugadorActual] = posiciones[jugadorActual] + puntosDado;
-            if (posiciones[jugadorActual] > 11) posiciones[jugadorActual] = posiciones[jugadorActual] - 12;
-            System.out.println(nuevaPosicionJugador());
-            System.out.println("La categoría es " + categoriaActual());
-            hacerPregunta();
+            pasarSiguienteJugador(puntosDado);
         }
 
+    }
+
+    private void pasarSiguienteJugador(int puntosDado) {
+        posiciones[jugadorActual] = posiciones[jugadorActual] + puntosDado;
+        if (posiciones[jugadorActual] > 11) posiciones[jugadorActual] = posiciones[jugadorActual] - 12;
+        System.out.println(nuevaPosicionJugador());
+        System.out.println("La categoría es " + categoriaActual());
+        hacerPregunta();
     }
 
     private void hacerPregunta() {

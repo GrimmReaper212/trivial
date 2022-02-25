@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class GameLauncher {
 
-    private static boolean noGanador;
+    private static boolean ganador;
 
     public static void main(String[] args) {
         Game juego = new Game();
@@ -27,11 +27,11 @@ public class GameLauncher {
                     juego.tirarDado(rand.nextInt(5) + 1);
 
                     if (rand.nextInt(9) == 7) {
-                        noGanador = juego.respuestaIncorrecta();
+                        ganador = !juego.respuestaIncorrecta();
                     } else {
-                        noGanador = juego.fueRespuestaCorrecta();
+                        ganador = !juego.fueRespuestaCorrecta();
                     }
-                } while (noGanador);
+                } while (!ganador);
             } else {
                 System.out.println("Necesitas al menos 2 jugadores para comenzar la partida...");
             }

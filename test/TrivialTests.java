@@ -32,4 +32,17 @@ public class TrivialTests {
         Assertions.assertEquals(expected, actual);
 
     }
+
+    @Test
+    public void problema1(){
+        Game sut = new Game();
+        sut.agregar("Maria");
+
+        Boolean expected = false;
+        Boolean actual = sut.esJugable();
+
+        Assertions.assertEquals(expected, actual);
+
+
+    }
 }

@@ -5,9 +5,9 @@ import java.util.LinkedList;
 
 public class Game {
     ArrayList jugadores = new ArrayList();
-    int[] posiciones = new int[6];
-    int[] monederos = new int[6];
-    boolean[] enCasillaCastigo = new boolean[6];
+    int[] posiciones = new int[7];
+    int[] monederos = new int[7];
+    boolean[] enCasillaCastigo = new boolean[7];
 
     LinkedList preguntasCultura = new LinkedList();
     LinkedList preguntasCiencias = new LinkedList();
@@ -32,6 +32,13 @@ public class Game {
 
     public boolean esJugable() {
         return (cuantosJugadores() >= 2);
+    }
+
+    public boolean menosDe6Jugadores() throws ArrayIndexOutOfBoundsException{
+        if (cuantosJugadores() <= 6){
+            return true;
+        }
+        throw new ArrayIndexOutOfBoundsException();
     }
 
     public boolean agregar(String playerName) {
